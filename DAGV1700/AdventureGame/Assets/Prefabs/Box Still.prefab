@@ -48,9 +48,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3590419055512551519, guid: 60440427a1f45a04488c9326587098e2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7096522703670629802, guid: 60440427a1f45a04488c9326587098e2, type: 3}
       propertyPath: m_Name
       value: Box Still
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965222248640947592, guid: 60440427a1f45a04488c9326587098e2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
