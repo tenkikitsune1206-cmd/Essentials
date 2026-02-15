@@ -1,7 +1,9 @@
 //Maya ASCII 2026 scene
 //Name: Table_Floor_Chair.ma
-//Last modified: Sun, Feb 15, 2026 04:23:21 AM
+//Last modified: Sun, Feb 15, 2026 04:56:40 AM
 //Codeset: 1252
+file -rdi 1 -ns "Mug" -rfn "MugRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Tenki/Documents/GitHub/Essentials/DAGV1100and1200/Maya/Mug.ma";
+file -r -ns "Mug" -dr 1 -rfn "MugRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Tenki/Documents/GitHub/Essentials/DAGV1100and1200/Maya/Mug.ma";
 requires maya "2026";
 requires -nodeType "polyBoolean" "polyBoolean" "1.1";
 requires "mtoa" "5.5.4.2";
@@ -11,23 +13,23 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "807214DF-4A00-078F-B971-8DB4D185F502";
+fileInfo "UUID" "2C461DF8-4846-9CB6-ED69-6A940C411EE4";
 createNode transform -s -n "persp";
 	rename -uid "CC29397F-4695-A85C-B028-E0BB1C0D3482";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28.848200009249549 18.440605867923708 39.54739856749395 ;
-	setAttr ".r" -type "double3" -14.631986703611542 36.433088954187433 -9.5865215676963254e-14 ;
-	setAttr ".rp" -type "double3" -3.4416913763379853e-15 -1.7763568394002505e-15 7.1054273576010019e-15 ;
-	setAttr ".rpt" -type "double3" 1.3872706748071441e-15 4.9364068145635121e-15 2.3336021776006781e-14 ;
+	setAttr ".t" -type "double3" 3.6530820234206809 13.134648919080847 33.377438632646665 ;
+	setAttr ".r" -type "double3" -14.631986703612736 10.272974762896563 1.5495183167023391e-13 ;
+	setAttr ".rp" -type "double3" -4.4408920985006262e-16 -1.7763568394002505e-15 0 ;
+	setAttr ".rpt" -type "double3" -3.3273820646612036e-15 1.9954927146078757e-15 2.3440209040314985e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "77CBB975-4815-479C-1DCD-5A827E6E8FD2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 49.887827016220598;
+	setAttr ".coi" 32.461492948802636;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.18150893221437414 5.8384635805230101 0.71182058979046303 ;
+	setAttr ".tp" -type "double3" -1.9482884278894366 4.9345653021037048 2.4722319158661676 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "4F4DCEC3-451D-7530-7248-9FA319276A9A";
@@ -178,23 +180,14 @@ createNode mesh -n "TablemeshShape" -p "Tablemesh";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".lev" 3;
-	setAttr -s 17 ".pt";
-	setAttr ".pt[84]" -type "float3" -0.0022794278 0.1406641 0.030769218 ;
-	setAttr ".pt[85]" -type "float3" -0.0022754124 0.1406641 0.035321597 ;
-	setAttr ".pt[86]" -type "float3" 0.0022771263 0.1406641 0.035325706 ;
-	setAttr ".pt[87]" -type "float3" 0.0022753205 0.1406641 0.030770831 ;
-	setAttr ".pt[88]" -type "float3" 0.0022794255 0.1406641 0.030769218 ;
-	setAttr ".pt[89]" -type "float3" -0.0022753249 0.1406641 0.030770831 ;
-	setAttr ".pt[90]" -type "float3" -0.0022771277 0.1406641 0.035325706 ;
-	setAttr ".pt[91]" -type "float3" 0.0022754115 0.1406641 0.035321597 ;
-	setAttr ".pt[92]" -type "float3" -0.0023837679 -0.1406641 -0.035320576 ;
-	setAttr ".pt[93]" -type "float3" -0.0023865215 -0.1406641 -0.030552637 ;
-	setAttr ".pt[94]" -type "float3" 0.0023838549 -0.1406641 -0.030552929 ;
-	setAttr ".pt[95]" -type "float3" 0.0023865274 -0.1406641 -0.035325706 ;
-	setAttr ".pt[96]" -type "float3" 0.0023837686 -0.1406641 -0.035320576 ;
-	setAttr ".pt[97]" -type "float3" -0.0023865274 -0.1406641 -0.035325706 ;
-	setAttr ".pt[98]" -type "float3" -0.0023838656 -0.1406641 -0.030552929 ;
-	setAttr ".pt[99]" -type "float3" 0.0023865311 -0.1406641 -0.030552637 ;
+	setAttr -s 16 ".pt[84:99]" -type "float3"  -0.0022794278 0.1406641 0.030769218 
+		-0.0022754124 0.1406641 0.035321597 0.0022771263 0.1406641 0.035325706 0.0022753205 
+		0.1406641 0.030770831 0.0022794255 0.1406641 0.030769218 -0.0022753249 0.1406641 
+		0.030770831 -0.0022771277 0.1406641 0.035325706 0.0022754115 0.1406641 0.035321597 
+		-0.0023837679 -0.1406641 -0.035320576 -0.0023865215 -0.1406641 -0.030552637 0.0023838549 
+		-0.1406641 -0.030552929 0.0023865274 -0.1406641 -0.035325706 0.0023837686 -0.1406641 
+		-0.035320576 -0.0023865274 -0.1406641 -0.035325706 -0.0023838656 -0.1406641 -0.030552929 
+		0.0023865311 -0.1406641 -0.030552637;
 createNode mesh -n "polySurfaceShape2" -p "Tablemesh";
 	rename -uid "8910ED94-4EAF-A685-239B-99861981F63E";
 	setAttr -k off ".v";
@@ -2575,15 +2568,15 @@ createNode mesh -n "WallShape3" -p "Wall3";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "BC53DF60-4516-3729-C90A-CFB4B1CADBDD";
+	rename -uid "EB89F7DA-4617-A0A7-5B58-96BAEF9D1ACC";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "BB4478E0-4A8C-02F0-0448-448391237F39";
+	rename -uid "6C72182E-40D6-3265-5AD0-D491D5F2D367";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "04D50419-467E-E0B7-D6D7-F59F9A2ADBCB";
+	rename -uid "57AFE712-4F2A-8B50-427A-2296EFAB144E";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "BAACCB86-4741-7E7A-04D7-21AA3FB7D577";
+	rename -uid "0BB42ABB-4DA8-4A0D-AFF6-B583E21734C5";
 	setAttr ".cdl" 4;
 	setAttr -s 5 ".dli[1:4]"  1 2 3 4;
 	setAttr -s 3 ".dli";
@@ -2591,7 +2584,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "9AF0EAE5-4DC5-992E-ABB0-D3B54308499E";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "E4A5FC7C-406F-660D-2B2E-689754B8D050";
+	rename -uid "22965B2C-471A-535F-7C7E-5C9403E317E9";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "EEF34604-4824-4D6A-D41D-C1BE0A7F8A01";
 	setAttr ".g" yes;
@@ -3286,7 +3279,7 @@ createNode polySplitRing -n "polySplitRing1";
 createNode polyTweak -n "polyTweak1";
 	rename -uid "D163F74F-4685-C7CB-DD4B-A29FB2A86C20";
 	setAttr ".uopa" yes;
-	setAttr -s 17 ".tk";
+	setAttr -s 16 ".tk";
 	setAttr ".tk[53]" -type "float3" 0 0.021878609 0 ;
 	setAttr ".tk[58]" -type "float3" 0 0.021878609 0 ;
 	setAttr ".tk[63]" -type "float3" 0 0.021878609 0 ;
@@ -3467,6 +3460,19 @@ createNode polySplit -n "polySplit43";
 	setAttr -s 2 ".d[0:1]"  -2147483617 -2147483628;
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
+createNode reference -n "MugRN";
+	rename -uid "290265BA-4C43-98E1-B073-6AB7DBC72C08";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"MugRN"
+		"MugRN" 0
+		"MugRN" 4
+		2 "|Mug:Mug" "visibility" " 1"
+		2 "|Mug:Mug" "translate" " -type \"double3\" 5.99104709664922197 3.88679814338684082 5.3757739107170055"
+		
+		2 "|Mug:Mug" "rotate" " -type \"double3\" 0 33.88516088169647844 0"
+		2 "|Mug:Mug" "scale" " -type \"double3\" 1 1 1";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -3485,6 +3491,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
+	setAttr -s 2 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -3492,7 +3499,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.66666669 0.66666669 0.66666669 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 21 ".dsm";
+	setAttr -s 22 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 7 ".gn";
 select -ne :initialParticleSE;
@@ -3515,8 +3522,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "FloorLyr.di" "FloorMesh.do";
 connectAttr "pCubeShape1_pnts_0__pntx.o" "FloorMeshShape.pt[0].px";
 connectAttr "pCubeShape1_pnts_0__pnty.o" "FloorMeshShape.pt[0].py";
