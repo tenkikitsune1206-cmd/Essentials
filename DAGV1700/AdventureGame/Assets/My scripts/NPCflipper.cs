@@ -1,23 +1,25 @@
 using UnityEngine;
+using UnityEngine.AI;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+
+public class NPCFlipper : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    private NavMeshAgent agent;
+    private SpriteRenderer spriteRenderer;
 
-    }
 
-    // Update is called once per frame
     void Awake()
     {
-        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
+
 
     void Update()
     {
         // Only flip if the agent is actually moving horizontally
         float xVel = agent.velocity.x;
+
 
         if (Mathf.Abs(xVel) > 0.01f)
         {

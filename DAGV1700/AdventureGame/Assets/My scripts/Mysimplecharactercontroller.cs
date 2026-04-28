@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// The SimpleCharacterController class controls basic movement of a 2D platformer character.
+/// The Mysimplecharactercontroller class controls basic movement of a 2D platformer character.
 /// This includes horizontal movement and jumping, adding gravity, and maintaining character position on the x-axis.
 /// </summary>
 [Tooltip("Controls basic movement of a 2D platformer character.")]
@@ -20,8 +20,8 @@ public class Mysimplecharactercontroller : MonoBehaviour
     private CharacterController controller;
     private Vector3 velocity;
     private Transform thisTransform;
-    private int jumpcount = 0;
-    private int maxjumps = 2;
+    private int jumpCount = 0;
+    private int maxJumps = 2;
     //add a roll to the character controller
 
 
@@ -57,10 +57,10 @@ public class Mysimplecharactercontroller : MonoBehaviour
         controller.Move(move);
 
         // Handle jumping
-        if (Input.GetButtonDown("Jump") && jumpcount < maxjumps)
+        if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-            jumpcount++;
+            jumpCount++;
         }
     }
 
@@ -78,7 +78,7 @@ public class Mysimplecharactercontroller : MonoBehaviour
         {
             // Reset vertical velocity when on the ground
             velocity.y = 0f;
-            jumpcount = 0;
+            jumpCount = 0;
         }
 
         // Apply velocity
