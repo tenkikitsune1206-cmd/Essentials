@@ -4963,7 +4963,7 @@ GameObject:
   - component: {fileID: 73244328}
   - component: {fileID: 73244330}
   - component: {fileID: 73244329}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Start Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5202,7 +5202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200179584}
   - component: {fileID: 200179583}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19867,7 +19867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 888093097}
   - component: {fileID: 888093096}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24811,7 +24811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.7, y: -4.5}
+  m_AnchoredPosition: {x: 99.59996, y: -78.5}
   m_SizeDelta: {x: 378.6, y: 53.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &999703590
@@ -24834,7 +24834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pink                   Goon
+  m_text: Pink Goon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24899,7 +24899,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 132.20932, w: 30.252304}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -24913,6 +24913,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999703588}
   m_CullTransparentMesh: 1
+--- !u!1 &1061740252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1061740254}
+  - component: {fileID: 1061740253}
+  m_Layer: 0
+  m_Name: Scene Loader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1061740253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061740252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485c826cfea864d679f6eee8001f0097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadType: 0
+--- !u!4 &1061740254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061740252}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.33478, y: -0.00683, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1063474918
 GameObject:
   m_ObjectHideFlags: 0
@@ -25059,7 +25104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173928939}
   - component: {fileID: 1173928938}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25223,51 +25268,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1208285284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1208285286}
-  - component: {fileID: 1208285285}
-  m_Layer: 0
-  m_Name: Scene Loader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1208285285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208285284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 485c826cfea864d679f6eee8001f0097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadType: 0
---- !u!4 &1208285286
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208285284}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.21905, y: 0.17486, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44817,12 +44817,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1208285285}
+      - m_Target: {fileID: 1061740253}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: a5e70604c685d9a4a9552bf6cb93d507, type: 3}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -44877,7 +44877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1943908030}
   - component: {fileID: 1943908029}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44964,7 +44964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1945789663}
   - component: {fileID: 1945789662}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Blue walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45056,7 +45056,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1951818868}
   - component: {fileID: 1951818867}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49973,7 +49973,6 @@ SceneRoots:
   - {fileID: 1198045450}
   - {fileID: 150417088}
   - {fileID: 679870590}
-  - {fileID: 1208285286}
   - {fileID: 1633752821}
   - {fileID: 930371510}
   - {fileID: 1572932675}
@@ -49986,3 +49985,4 @@ SceneRoots:
   - {fileID: 1765433709}
   - {fileID: 592739176}
   - {fileID: 1945789663}
+  - {fileID: 1061740254}
